@@ -9,9 +9,5 @@ end xnor_gate;
 
 architecture rtl of xnor_gate is
 begin
-  c <= '1' when a = '0' and b = '0' else
-       '0' when a = '0' and b = '1' else
-       '0' when a = '1' and b = '0' else
-       '1' when a = '1' and b = '1' else
-       'Z';
+  c <= (a and b) or ((not a) and (not b))
 end rtl;
