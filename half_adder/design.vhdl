@@ -12,3 +12,4 @@ begin
     sum <= a xor b;
     carry <= a and b;
 end dataflow;
+

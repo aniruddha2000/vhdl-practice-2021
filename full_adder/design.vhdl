@@ -19,7 +19,7 @@ if (A = "001" or A = "010" or A = "100" or A = "111") then
 O(1) <= '1';
 ---single inverted commas used for assigning to one bit
 else
-O(1) <= '0';
+O(1) < = '0';
 end if;
 
 ---for CARRY
